@@ -1,0 +1,144 @@
+.tek-ds-logo {
+  padding-top: 80px;
+  margin-top: -2px;
+
+  .img-caption {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 22px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 120px;
+  }
+  .brand-elements-wrap {
+    row-gap: 110px !important;
+
+    .ant-col {
+      div {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        margin-top: 40px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      row-gap: 45px !important;
+    }
+    p {
+      // margin-top: 40px;
+      padding-right: 34px;
+      color: rgba(14, 14, 45, 0.9);
+
+      // @media (max-width: 1199px) {
+      //   font-size: 13px;
+      //   margin-top: 24px;
+      // }
+    }
+  }
+
+  .logo-size {
+    p {
+      margin-top: 40px;
+    }
+
+    img {
+      box-shadow: 0px 33.562px 21.8153px rgba(0, 0, 0, 0.035);
+    }
+  }
+
+  .logo-sizes-row {
+    row-gap: 52px !important;
+  }
+
+  .size-info {
+    font-family: 'indivisible' !important;
+
+    & > div > div {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+
+        @media (min-width: 768px) {
+          margin-bottom: 80px;
+        }
+      }
+
+      h6 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        font-family: 'indivisible' !important;
+
+        @media (min-width: 768px) {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 150%;
+        }
+      }
+
+      ul {
+        margin-top: 16px;
+      }
+
+      li {
+        font-weight: 350;
+        font-size: 16px;
+        line-height: 150%;
+        font-family: 'indivisible' !important;
+        color: rgba(14, 14, 45, 0.9);
+
+        @media (min-width: 768px) {
+          font-size: 24px;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+
+  .min-size-img {
+    p {
+      font-size: 14px;
+
+      @media (min-width: 768px) {
+        font-size: 12px;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .min-size {
+    .media-sizes {
+      p {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        font-family: 'indivisible' !important;
+        border-bottom: 0.5px solid #0f0f0f;
+        padding: 16px 0;
+
+        @media (min-width: 768px) {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 150%;
+        }
+
+        span {
+          font-weight: 350;
+          font-family: 'indivisible' !important;
+        }
+      }
+    }
+  }
+}

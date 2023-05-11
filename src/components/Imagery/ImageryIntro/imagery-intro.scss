@@ -1,0 +1,94 @@
+.tek-ds-imagery {
+  padding-top: 120px;
+
+  &__video {
+    margin-top: 80px;
+  }
+
+  &__incorrect {
+    .ant-row {
+      row-gap: 120px;
+
+      .ant-col {
+        & > div {
+          display: flex;
+          align-items: flex-start;
+          gap: 16px;
+          margin-top: 32px;
+        }
+      }
+    }
+
+    p {
+      color: rgba(14, 14, 45, 0.9);
+    }
+  }
+
+  .workplace-images,
+  .auto-images,
+  .infra-images,
+  .comp-images,
+  .neg-images,
+  .bg-images,
+  .color-images,
+  .apparel-images {
+    row-gap: 24px !important;
+  }
+
+  .doucment-images {
+    img {
+      transition: all ease 0.3s;
+
+      &:hover {
+        transform: scale(1.04);
+        transition: all ease 0.3s;
+      }
+    }
+  }
+
+  .color-palettes {
+    .ant-col {
+      .color-palette {
+        background: #00c3b4;
+        height: 80px;
+        p {
+          &:first-child {
+            border-bottom: 0.5px solid #0e131f;
+            padding-bottom: 8px;
+          }
+
+          &:nth-child(2) {
+            margin-top: 12px;
+          }
+        }
+      }
+      &:first-child {
+        .color-palette {
+          background: #00c3b4;
+        }
+      }
+      &:nth-child(2) {
+        .color-palette {
+          background: #5d696a;
+        }
+      }
+      &:nth-child(3) {
+        .color-palette {
+          background: #182b29;
+
+          p {
+            &:first-child {
+              border-bottom: 0.5px solid #fff !important;
+            }
+            color: #fff;
+          }
+        }
+      }
+      &:nth-child(4) {
+        .color-palette {
+          background: #b4c0c2;
+        }
+      }
+    }
+  }
+}

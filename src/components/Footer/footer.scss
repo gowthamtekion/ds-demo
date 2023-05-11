@@ -1,0 +1,61 @@
+.tek-ds-footer {
+  background: #0e131f;
+  padding: 24px 0;
+  color: #fff;
+
+  @media (min-width: 1200px) {
+    padding: 52px 0;
+  }
+
+  .ant-row {
+    justify-content: space-between;
+  }
+
+  img {
+    width: 26px;
+    height: 26px;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'indivisible' !important;
+
+    & > div {
+      a,
+      span {
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 130%;
+        font-weight: 400;
+        color: #fff;
+        @media (min-width: 768px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  &__rights {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media (min-width: 768px) {
+      gap: 14px;
+    }
+
+    @media (min-width: 1200px) {
+      gap: 32px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 130%;
+      font-weight: 400;
+      margin-bottom: 0;
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
