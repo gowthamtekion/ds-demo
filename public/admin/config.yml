@@ -2,8 +2,8 @@ backend:
   name: github
   repo: gowthamtekion/ds-demo
 
-media_folder: "public/uploads"
-public_folder: "uploads"
+media_folder: "../../public/uploads"
+public_folder: "../../public"
 
 collections:
   - name: settings

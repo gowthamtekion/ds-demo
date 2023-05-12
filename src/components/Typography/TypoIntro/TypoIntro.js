@@ -12,7 +12,6 @@ import Variable1 from "../../../assets/typography/variable-1.svg";
 import Variable2 from "../../../assets/typography/variable-2.svg";
 import Variable3 from "../../../assets/typography/variable-3.svg";
 import Variable4 from "../../../assets/typography/variable-4.svg";
-import Styling from "../../../assets/typography/styling.jpg";
 import IndivisibleFont from "../../../assets/typography/indivisible-font.svg";
 import InterFont from "../../../assets/typography/inter-font.svg";
 

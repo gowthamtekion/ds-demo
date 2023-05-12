@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollTop";
-import { useNavigate } from "react-router-dom";
 
 const Home = lazy(() => import("./pages/Homepage"));
 const Logo = lazy(() => import("./pages/Logopage"));

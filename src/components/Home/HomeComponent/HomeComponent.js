@@ -1,3 +1,4 @@
+/* eslint-disable no-sequences */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/anchor-has-content */
 import { Col, Row } from "antd";

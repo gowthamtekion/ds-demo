@@ -25,8 +25,6 @@ import Logosystem5 from "../../../assets/Logo/logo-system-5.svg";
 import Logosystem6 from "../../../assets/Logo/logo-system-6.svg";
 
 import Scale from "../../../assets/Logo/scale.svg";
-import LogoGuidance from "../../../assets/Logo/logo-guidance.svg";
-import LogoSystem from "../../../assets/Logo/logo-system.svg";
 
 import NoStrechLogo from "../../../assets/Logo/incorrect-1.png";
 import NoContainLogo from "../../../assets/Logo/incorrect-2.png";
