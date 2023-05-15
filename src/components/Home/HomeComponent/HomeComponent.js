@@ -34,6 +34,7 @@ import ZipFolderIcon from "../../../assets/home/zip-folder.svg";
 import FontIcon from "../../../assets/home/font-icon.svg";
 import DownloadIcon from "../../../assets/home/arrow-down-circle.svg";
 import ExternalLinkIcon from "../../../assets/home/external-link.svg";
+import dataList from "../../../test-data.json";
 
 import { useEffect } from "react";
 
@@ -41,6 +42,9 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.core.globals("ScrollTrigger", ScrollTrigger);
 
 function HomeComponent() {
+  // const excerptList = dataList.map((data) => {
+  //   return data.content.split(" ").slice(0, 20).join(" ") + "...";
+  // });
   useEffect(() => {
     gsap.set(".gallery-row-1", {
       xPercent: 0,
@@ -133,295 +137,324 @@ function HomeComponent() {
   });
   return (
     <section className="tek-ds-home">
-      <div className="container first-container">
-        <Row>
-          <Col md={{ span: 20, offset: 2 }}>
-            <p className="fnt-28 text-center text-primary">Brand Station</p>
-            <h1 className="display-1 text-center mt-24">
-              One unified effort creates great design.
-            </h1>
-          </Col>
-        </Row>
-        <Row className="tek-ds-home__video">
-          <Col>
-            <video className="w-100" autoPlay muted loop>
-              <source src={HomeBannerAnimation} type="video/mp4" />
-            </video>
-          </Col>
-        </Row>
-        <Row className="pt-280">
-          <Col md={{ span: 10 }}>
-            <h1 className="h1">One brand, One identity</h1>
-          </Col>
-          <Col md={{ span: 12, offset: 2 }}>
-            <p className="fnt-28">
-              We needed a cohesive, holistic Tekion brand station aka “TBS” that
-              would build consistency, and bring all our visual communication
-              under one roof. We resolved to make Tekion Instantly recognisable,
-              Unique, and Scalable.
-            </p>
-          </Col>
-        </Row>
-        <Row className="pt-160">
-          <Col>
-            <img src={BrandImage} alt="brand imgae" />
-          </Col>
-        </Row>
-        <Row className="pt-280">
-          <Col md={{ span: 10 }}>
-            <h1 className="h1">Brand pillars</h1>
-          </Col>
-          <Col md={{ span: 12, offset: 2 }}>
-            <p className="fnt-28">
-              Our brand pillars embody our identity, reflecting our beliefs and
-              driving our actions. With innovation, excitement, and inspiration
-              at their core, they shape the products and marketing materials we
-              create.
-            </p>
-          </Col>
-        </Row>
-        <Row gutter={24} className="pt-160">
-          <Col md={{ span: 8 }}>
-            <img
-              className="w-100 hover-scale"
-              src={Innovation}
-              alt="innovation"
-            />
-          </Col>
-          <Col md={{ span: 8 }}>
-            <img
-              className="w-100 hover-scale"
-              src={Exciting}
-              alt="innovation"
-            />
-          </Col>
-          <Col md={{ span: 8 }}>
-            <img
-              className="w-100 hover-scale"
-              src={Inspiring}
-              alt="innovation"
-            />
-          </Col>
-        </Row>
-        <Row className="pt-280">
-          <Col md={{ span: 10 }}>
-            <h1 className="h1">Brand elements</h1>
-          </Col>
-          <Col md={{ span: 12, offset: 2 }}>
-            <p className="fnt-28">
-              The Tekion Brand Station currently comprises five core elements
-              that help unify and communicate our brands with consistency and
-              clarity. They include our logo, color, typography, photography
-              styles, and design layouts.x
-            </p>
-          </Col>
-        </Row>
-        <Row className="tek-ds-home__links pt-160">
-          <Col className="w-100">
-            <div className="link-list">
-              <div className="link-list-item">
-                <Link to="/logo">
-                  <div className="link-item-content">
-                    <div className="title-wrap">
-                      <h1 className="h1 text-primary title-1">Logo</h1>
-                      <h1 className="h1 text-primary title-2">Logo</h1>
-                    </div>
-                    <p className="fnt-28 text-primary">Constructive</p>
-                  </div>
-                  <div className="link-item-line">
-                    <div className="line-fill"></div>
-                  </div>
-                </Link>
-                <img src={HoverImg1} alt="hover item" />
-              </div>
-              <div className="link-list-item">
-                <Link to="/color">
-                  <div className="link-item-content">
-                    <div className="title-wrap">
-                      <h1 className="h1 text-primary title-1">Color</h1>
-                      <h1 className="h1 text-primary title-2">Color</h1>
-                    </div>
-                    {/* <h1 className="h1 text-primary">Color</h1> */}
-                    <p className="fnt-28 text-primary">Versatile</p>
-                  </div>
-                  <div className="link-item-line">
-                    <div className="line-fill"></div>
-                  </div>
-                </Link>
-                <img src={HoverImg2} alt="hover item" />
-              </div>
-              <div className="link-list-item">
-                <Link to="/typography">
-                  <div className="link-item-content">
-                    <div className="title-wrap">
-                      <h1 className="h1 text-primary title-1">Typography</h1>
-                      <h1 className="h1 text-primary title-2">Typography</h1>
-                    </div>
-                    {/* <h1 className="h1 text-primary">Typography</h1> */}
-                    <p className="fnt-28 text-primary">Thoughtful</p>
-                  </div>
-                  <div className="link-item-line">
-                    <div className="line-fill"></div>
-                  </div>
-                </Link>
-                <img src={HoverImg3} alt="hover item" />
-              </div>
-              <div className="link-list-item">
-                <Link to="photography">
-                  <div className="link-item-content">
-                    <div className="title-wrap">
-                      <h1 className="h1 text-primary title-1">Photography</h1>
-                      <h1 className="h1 text-primary title-2">Photography</h1>
-                    </div>
-                    {/* <h1 className="h1 text-primary">Photography</h1> */}
-                    <p className="fnt-28 text-primary">Creative</p>
-                  </div>
-                  <div className="link-item-line">
-                    <div className="line-fill"></div>
-                  </div>
-                </Link>
-                <img src={HoverImg4} alt="hover item" />
-              </div>
-              <div className="link-list-item">
-                <Link to="brand-mockups">
-                  <div className="link-item-content">
-                    <div className="title-wrap">
-                      <h1 className="h1 text-primary title-1">
-                        Brand in action
+      {dataList.length &&
+        dataList.map((post, i) => {
+          return (
+            <>
+              <div className="container first-container">
+                <>
+                  <Row>
+                    <Col md={{ span: 20, offset: 2 }}>
+                      <p className="fnt-28 text-center text-primary">
+                        {post.mainlabel}
+                      </p>
+                      <h1 className="display-1 text-center mt-24">
+                        {post.maintitle}
                       </h1>
-                      <h1 className="h1 text-primary title-2">
-                        Brand in action
-                      </h1>
+                    </Col>
+                  </Row>
+                  <Row className="tek-ds-home__video">
+                    <Col>
+                      <video className="w-100" autoPlay muted loop>
+                        <source src={post.bannerVideo} type="video/mp4" />
+                      </video>
+                    </Col>
+                  </Row>
+                </>
+
+                <Row className="pt-280">
+                  <Col md={{ span: 10 }}>
+                    <h1 className="h1">{post.brandTitle}</h1>
+                  </Col>
+                  <Col md={{ span: 12, offset: 2 }}>
+                    <p className="fnt-28">{post.brandText}</p>
+                  </Col>
+                </Row>
+                <Row className="pt-160">
+                  <Col>
+                    <img src={post.brandPhoto} alt="brand imgae" />
+                  </Col>
+                </Row>
+                <Row className="pt-280">
+                  <Col md={{ span: 10 }}>
+                    <h1 className="h1">Brand pillars</h1>
+                  </Col>
+                  <Col md={{ span: 12, offset: 2 }}>
+                    <p className="fnt-28">
+                      Our brand pillars embody our identity, reflecting our
+                      beliefs and driving our actions. With innovation,
+                      excitement, and inspiration at their core, they shape the
+                      products and marketing materials we create.
+                    </p>
+                  </Col>
+                </Row>
+                <Row gutter={24} className="pt-160">
+                  <Col md={{ span: 8 }}>
+                    <img
+                      className="w-100 hover-scale"
+                      src={Innovation}
+                      alt="innovation"
+                    />
+                  </Col>
+                  <Col md={{ span: 8 }}>
+                    <img
+                      className="w-100 hover-scale"
+                      src={Exciting}
+                      alt="innovation"
+                    />
+                  </Col>
+                  <Col md={{ span: 8 }}>
+                    <img
+                      className="w-100 hover-scale"
+                      src={Inspiring}
+                      alt="innovation"
+                    />
+                  </Col>
+                </Row>
+                <Row className="pt-280">
+                  <Col md={{ span: 10 }}>
+                    <h1 className="h1">Brand elements</h1>
+                  </Col>
+                  <Col md={{ span: 12, offset: 2 }}>
+                    <p className="fnt-28">
+                      The Tekion Brand Station currently comprises five core
+                      elements that help unify and communicate our brands with
+                      consistency and clarity. They include our logo, color,
+                      typography, photography styles, and design layouts.x
+                    </p>
+                  </Col>
+                </Row>
+                <Row className="tek-ds-home__links pt-160">
+                  <Col className="w-100">
+                    <div className="link-list">
+                      <div className="link-list-item">
+                        <Link to="/logo">
+                          <div className="link-item-content">
+                            <div className="title-wrap">
+                              <h1 className="h1 text-primary title-1">Logo</h1>
+                              <h1 className="h1 text-primary title-2">Logo</h1>
+                            </div>
+                            <p className="fnt-28 text-primary">Constructive</p>
+                          </div>
+                          <div className="link-item-line">
+                            <div className="line-fill"></div>
+                          </div>
+                        </Link>
+                        <img src={HoverImg1} alt="hover item" />
+                      </div>
+                      <div className="link-list-item">
+                        <Link to="/color">
+                          <div className="link-item-content">
+                            <div className="title-wrap">
+                              <h1 className="h1 text-primary title-1">Color</h1>
+                              <h1 className="h1 text-primary title-2">Color</h1>
+                            </div>
+                            {/* <h1 className="h1 text-primary">Color</h1> */}
+                            <p className="fnt-28 text-primary">Versatile</p>
+                          </div>
+                          <div className="link-item-line">
+                            <div className="line-fill"></div>
+                          </div>
+                        </Link>
+                        <img src={HoverImg2} alt="hover item" />
+                      </div>
+                      <div className="link-list-item">
+                        <Link to="/typography">
+                          <div className="link-item-content">
+                            <div className="title-wrap">
+                              <h1 className="h1 text-primary title-1">
+                                Typography
+                              </h1>
+                              <h1 className="h1 text-primary title-2">
+                                Typography
+                              </h1>
+                            </div>
+                            {/* <h1 className="h1 text-primary">Typography</h1> */}
+                            <p className="fnt-28 text-primary">Thoughtful</p>
+                          </div>
+                          <div className="link-item-line">
+                            <div className="line-fill"></div>
+                          </div>
+                        </Link>
+                        <img src={HoverImg3} alt="hover item" />
+                      </div>
+                      <div className="link-list-item">
+                        <Link to="photography">
+                          <div className="link-item-content">
+                            <div className="title-wrap">
+                              <h1 className="h1 text-primary title-1">
+                                Photography
+                              </h1>
+                              <h1 className="h1 text-primary title-2">
+                                Photography
+                              </h1>
+                            </div>
+                            {/* <h1 className="h1 text-primary">Photography</h1> */}
+                            <p className="fnt-28 text-primary">Creative</p>
+                          </div>
+                          <div className="link-item-line">
+                            <div className="line-fill"></div>
+                          </div>
+                        </Link>
+                        <img src={HoverImg4} alt="hover item" />
+                      </div>
+                      <div className="link-list-item">
+                        <Link to="brand-mockups">
+                          <div className="link-item-content">
+                            <div className="title-wrap">
+                              <h1 className="h1 text-primary title-1">
+                                Brand in action
+                              </h1>
+                              <h1 className="h1 text-primary title-2">
+                                Brand in action
+                              </h1>
+                            </div>
+                            {/* <h1 className="h1 text-primary">Brand in action</h1> */}
+                            <p className="fnt-28 text-primary">Realistic</p>
+                          </div>
+                          <div className="link-item-line">
+                            <div className="line-fill"></div>
+                          </div>
+                        </Link>
+                        <img src={HoverImg5} alt="hover item" />
+                      </div>
                     </div>
-                    {/* <h1 className="h1 text-primary">Brand in action</h1> */}
-                    <p className="fnt-28 text-primary">Realistic</p>
+                  </Col>
+                </Row>
+              </div>
+              <div className="pt-280 tek-ds-home__gallery pb-280">
+                <div className="tek-ds-home__gallery-wrap">
+                  <div className="gallery-row gallery-row-1">
+                    <div className="gallery-item">
+                      <div>
+                        <img
+                          className="w-100 hover-scale"
+                          src={GalleryImg1}
+                          alt="gallery"
+                        />{" "}
+                      </div>
+                    </div>
+                    <div className="gallery-item">
+                      <div>
+                        <img
+                          className="w-100 hover-scale"
+                          src={GalleryImg2}
+                          alt="gallery"
+                        />{" "}
+                      </div>
+                    </div>
+                    <div className="gallery-item">
+                      <div>
+                        <img
+                          className="w-100 hover-scale"
+                          src={GalleryImg3}
+                          alt="gallery"
+                        />{" "}
+                      </div>
+                    </div>
+                    <div className="gallery-item">
+                      <div>
+                        <img
+                          className="w-100 hover-scale"
+                          src={GalleryImg4}
+                          alt="gallery"
+                        />{" "}
+                      </div>
+                    </div>
                   </div>
-                  <div className="link-item-line">
-                    <div className="line-fill"></div>
+                  <div className="gallery-row gallery-row-2">
+                    <div className="gallery-item">
+                      <div>
+                        <img
+                          className="w-100 hover-scale"
+                          src={GalleryImg5}
+                          alt="gallery"
+                        />{" "}
+                      </div>
+                    </div>
+                    <div className="gallery-item">
+                      <div>
+                        <img
+                          className="w-100 hover-scale"
+                          src={GalleryImg6}
+                          alt="gallery"
+                        />{" "}
+                      </div>
+                    </div>
+                    <div className="gallery-item">
+                      <div>
+                        <img
+                          className="w-100 hover-scale"
+                          src={GalleryImg7}
+                          alt="gallery"
+                        />{" "}
+                      </div>
+                    </div>
+                    <div className="gallery-item">
+                      <div>
+                        <img
+                          className="w-100 hover-scale"
+                          src={GalleryImg8}
+                          alt="gallery"
+                        />{" "}
+                      </div>
+                    </div>
                   </div>
-                </Link>
-                <img src={HoverImg5} alt="hover item" />
+                </div>
               </div>
-            </div>
-          </Col>
-        </Row>
-      </div>
-      <div className="pt-280 tek-ds-home__gallery pb-280">
-        <div className="tek-ds-home__gallery-wrap">
-          <div className="gallery-row gallery-row-1">
-            <div className="gallery-item">
-              <div>
-                <img
-                  className="w-100 hover-scale"
-                  src={GalleryImg1}
-                  alt="gallery"
-                />{" "}
+              <div className="container pb-280">
+                <Row className="design-assets">
+                  <Col className="w-100 hover-scale">
+                    <div>
+                      <img src={ZipFolderIcon} alt="zip folder icon" />
+                      <p className="fnt-28 fnt-700">Logo assets</p>
+                    </div>
+                    <img
+                      className="c-pointer"
+                      src={DownloadIcon}
+                      alt="download icon"
+                    />
+                  </Col>
+                  <Col className="w-100 hover-scale">
+                    <div>
+                      <img src={FontIcon} alt="zip folder icon" />
+                      <p className="fnt-28 fnt-700">
+                        Indivisible Variable Font
+                      </p>
+                    </div>
+                    <img
+                      className="c-pointer"
+                      src={ExternalLinkIcon}
+                      alt="download icon"
+                    />
+                  </Col>
+                  <Col className="w-100 hover-scale">
+                    <div>
+                      <img src={ZipFolderIcon} alt="zip folder icon" />
+                      <p className="fnt-28 fnt-700">Word doc</p>
+                    </div>
+                    <img
+                      className="c-pointer"
+                      src={DownloadIcon}
+                      alt="download icon"
+                    />
+                  </Col>
+                  <Col className="w-100 hover-scale">
+                    <div>
+                      <img src={ZipFolderIcon} alt="zip folder icon" />
+                      <p className="fnt-28 fnt-700">Master template</p>
+                    </div>
+                    <img
+                      className="c-pointer"
+                      src={DownloadIcon}
+                      alt="download icon"
+                    />
+                  </Col>
+                </Row>
               </div>
-            </div>
-            <div className="gallery-item">
-              <div>
-                <img
-                  className="w-100 hover-scale"
-                  src={GalleryImg2}
-                  alt="gallery"
-                />{" "}
-              </div>
-            </div>
-            <div className="gallery-item">
-              <div>
-                <img
-                  className="w-100 hover-scale"
-                  src={GalleryImg3}
-                  alt="gallery"
-                />{" "}
-              </div>
-            </div>
-            <div className="gallery-item">
-              <div>
-                <img
-                  className="w-100 hover-scale"
-                  src={GalleryImg4}
-                  alt="gallery"
-                />{" "}
-              </div>
-            </div>
-          </div>
-          <div className="gallery-row gallery-row-2">
-            <div className="gallery-item">
-              <div>
-                <img
-                  className="w-100 hover-scale"
-                  src={GalleryImg5}
-                  alt="gallery"
-                />{" "}
-              </div>
-            </div>
-            <div className="gallery-item">
-              <div>
-                <img
-                  className="w-100 hover-scale"
-                  src={GalleryImg6}
-                  alt="gallery"
-                />{" "}
-              </div>
-            </div>
-            <div className="gallery-item">
-              <div>
-                <img
-                  className="w-100 hover-scale"
-                  src={GalleryImg7}
-                  alt="gallery"
-                />{" "}
-              </div>
-            </div>
-            <div className="gallery-item">
-              <div>
-                <img
-                  className="w-100 hover-scale"
-                  src={GalleryImg8}
-                  alt="gallery"
-                />{" "}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container pb-280">
-        <Row className="design-assets">
-          <Col className="w-100 hover-scale">
-            <div>
-              <img src={ZipFolderIcon} alt="zip folder icon" />
-              <p className="fnt-28 fnt-700">Logo assets</p>
-            </div>
-            <img className="c-pointer" src={DownloadIcon} alt="download icon" />
-          </Col>
-          <Col className="w-100 hover-scale">
-            <div>
-              <img src={FontIcon} alt="zip folder icon" />
-              <p className="fnt-28 fnt-700">Indivisible Variable Font</p>
-            </div>
-            <img
-              className="c-pointer"
-              src={ExternalLinkIcon}
-              alt="download icon"
-            />
-          </Col>
-          <Col className="w-100 hover-scale">
-            <div>
-              <img src={ZipFolderIcon} alt="zip folder icon" />
-              <p className="fnt-28 fnt-700">Word doc</p>
-            </div>
-            <img className="c-pointer" src={DownloadIcon} alt="download icon" />
-          </Col>
-          <Col className="w-100 hover-scale">
-            <div>
-              <img src={ZipFolderIcon} alt="zip folder icon" />
-              <p className="fnt-28 fnt-700">Master template</p>
-            </div>
-            <img className="c-pointer" src={DownloadIcon} alt="download icon" />
-          </Col>
-        </Row>
-      </div>
+            </>
+          );
+        })}
     </section>
   );
 }
