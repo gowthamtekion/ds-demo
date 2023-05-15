@@ -8,7 +8,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import React from "react";
 
-import BrandImage from "../../../assets/home/brand-image.svg";
+// import BrandImage from "../../../assets/home/brand-image.svg";
 import Innovation from "../../../assets/home/innovative.png";
 import Inspiring from "../../../assets/home/inspiring.png";
 import Exciting from "../../../assets/home/exciting.png";
@@ -28,7 +28,7 @@ import HoverImg3 from "../../../assets/home/hover-logo-3.png";
 import HoverImg4 from "../../../assets/home/hover-logo-4.png";
 import HoverImg5 from "../../../assets/home/hover-logo-5.png";
 
-import HomeBannerAnimation from "../../../assets/home/home-banner-animation.mp4";
+// import HomeBannerAnimation from "../../../assets/home/home-banner-animation.mp4";
 
 import ZipFolderIcon from "../../../assets/home/zip-folder.svg";
 import FontIcon from "../../../assets/home/font-icon.svg";
