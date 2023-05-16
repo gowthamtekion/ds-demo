@@ -17,7 +17,7 @@ const getPages = () => {
         };
         pagelist.push(page);
         let data = JSON.stringify(pagelist);
-        fs.writeFileSync("src/test-data.json", data);
+        fs.writeFileSync("src/pages.json", data);
       });
     });
   });
