@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
-const dirPathPages = path.join(__dirname, "./src/pages/content");
+const dirPathPages = path.join(__dirname, "../src/pages/content");
 let pagelist = [];
 
 const getPages = () => {
@@ -17,7 +17,7 @@ const getPages = () => {
         };
         pagelist.push(page);
         let data = JSON.stringify(pagelist);
-        fs.writeFileSync("./src/pages.json", data);
+        fs.writeFileSync("../src/pages.json", data);
       });
     });
   });
