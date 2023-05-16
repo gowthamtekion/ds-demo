@@ -1,5 +1,5 @@
 ---
-maintitle: Brand station label
+maintitle: new label
 mainlabel: l﻿anding page banner title
 bannerVideo: uploads/pie-chart.mp4
 brandTitle: One brand, One identity
