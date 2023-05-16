@@ -1,6 +1,6 @@
 ---
 maintitle: new label
-mainlabel: l﻿anding page banner title
+mainlabel: l﻿anding page banner title1
 bannerVideo: uploads/pie-chart.mp4
 brandTitle: One brand, One identity
 brandText: We needed a cohesive, holistic Tekion brand station aka “TBS” that
