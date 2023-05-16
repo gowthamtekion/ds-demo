@@ -1,3 +1,4 @@
+import pagejson from "../src/pages.json";
 const path = require("path");
 const fs = require("fs");
 
@@ -17,7 +18,7 @@ const getPages = () => {
         };
         pagelist.push(page);
         let data = JSON.stringify(pagelist);
-        fs.writeFileSync("../src/pages.json", data);
+        fs.writeFileSync(pagejson, data);
       });
     });
   });
