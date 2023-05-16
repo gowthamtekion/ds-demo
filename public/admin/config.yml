@@ -13,7 +13,7 @@ collections:
   files:
     - label: "Home Page"
       name: "home"
-      file: "src/datas/home/home.md"
+      file: "src/test-data.json"
       fields:
         - {label: Main title, name: maintitle, widget: string}
         - {label: Main label, name: mainlabel, widget: markdown}
