@@ -1,50 +1,36 @@
 backend:
   name: github
-  repo: gowthamtekion/ds-demo # Path to your Github repository
-  branch: master # Branch to update (master by default)
-
-media_folder: "public/uploads" # Folder where user uploaded files should go
-local_backend: true
-
-collections: # A list of collections the CMS should be able to edit
-  # - name: "pages" # Used in routes, e.g., /admin/collections/:slug/edit
-  #   label: "Pages" # Used in the UI, e.g., "New Post"
-  #   folder: "_posts" # The path to the folder where the documents are stored
-  #   create: true # Allow users to create new documents in this collection
-  #   fields: # The fields each document in this collection have
-  #     - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-  #     - {label: "Body", name: "body", widget: "markdown"}
+  repo: gowthamtekion/ds-demo
 
 
+media_folder: "public/uploads"
+public_folder: "uploads"
+
+collections:
 - label: "Pages"
   name: "pages"
   files:
     - label: "Home Page"
       name: "home"
-      file: "src/components/home/home.md"
+      file: "src/datas/home.md"
       fields:
-        - {label: Subtext, name: subtext, widget: string}
-        - {label: Title, name: title, widget: string}
-        - {label: Video, name: video, widget: file}
-        - {label: BrandTitle, name: brandtitle, widget: string}
-        - {label: BrandText, name: brandtext, widget: string}
-        - {label: BrandPhoto, name: brandphoto, widget: image}
-        # - label: Brand Identity
-        #   name: brandidentity
-        #   widget: text
-        #   fields:
-        #     - {label: BrandTitle, name: brandtitle, widget: string}
-        #     - {label: BrandText, name: brandtext, widget: string}
-        #     - {label: BrandPhoto, name: brandphoto, widget: image}
-    # - label: "Locations Page"
-    #   name: "locations"
-    #   file: "site/content/locations.yml"
-    #   fields:
-    #     - {label: Title, name: title, widget: string}
-    #     - {label: Intro, name: intro, widget: markdown}
-    #     - label: Locations
-    #       name: locations
-    #       widget: list
-    #       fields:
-    #         - {label: Name, name: name, widget: string}
-    #         - {label: Address, name: address, widget: string}
+        - {label: Main title, name: maintitle, widget: string}
+        - {label: Main label, name: mainlabel, widget: markdown}
+        - {label: Banner video, name: bannerVideo, widget: file, required: true}
+        - {label: brand Title, name: brandTitle, widget: markdown}
+        - {label: brand Text, name: brandText, widget: markdown}
+        - {label: brand Photo, name: brandPhoto, widget: image}
+
+# collections:
+#   - label: "Pages"
+#     name: "pages"
+#     folder: "_datas" # The path to the folder where the documents are stored
+#     create: true # Allow users to create new documents in this collections
+#     slug: "{{YYYY-MM-DD-title.md}}" # Filename template, e.g., YYYY-MM-DD-title.md
+#     fields: # The fields for each document, usually in front matter
+#         - {label: Main title, name: maintitle, widget: string}
+#         - {label: Main label, name: mainlabel, widget: markdown}
+#         - {label: Banner video, name: bannerVideo, widget: file, required: true}
+#         - {label: brand Title, name: brandTitle, widget: markdown}
+#         - {label: brand Text, name: brandText, widget: markdown}
+#         - {label: brand Photo, name: brandPhoto, widget: image}
