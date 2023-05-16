@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: gowthamtekion/ds-demo
+  branch: master
 
 
 media_folder: "public/uploads"
