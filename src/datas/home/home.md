@@ -1,5 +1,5 @@
 ---
-maintitle: new label
+maintitle: new label new
 mainlabel: l﻿anding page banner title1
 bannerVideo: uploads/pie-chart.mp4
 brandTitle: One brand, One identity
